@@ -1,8 +1,20 @@
 source 'https://rubygems.org'
 
+ruby '2.3.1'
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
+end
+
+
+
+# Site Specific Gems
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+# Add tether for Bootstrap
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
 end
 
 
