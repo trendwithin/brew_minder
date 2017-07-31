@@ -11,6 +11,7 @@ end
 
 # Site Specific Gems
 gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 # Add tether for Bootstrap
 source 'https://rails-assets.org' do
