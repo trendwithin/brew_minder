@@ -23,7 +23,7 @@ function findMatchingBeers(brewerList, brewerName) {
   let matchedBeers = [];
   let sorry = ['Sorry. No Matches Found'];
   brewerList.map(function (beer) {
-    if (~beer.indexOf(brewerName)) {
+    if (~beer.toLowerCase().indexOf(brewerName.toLowerCase())) {
       matchedBeers.push(beer);
     }
   });
