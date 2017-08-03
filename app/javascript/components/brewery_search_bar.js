@@ -7,7 +7,7 @@ class BrewerySearchBar extends Component {
     this.onInputChange = this.onInputChange.bind(this);
   }
 
-  clickedButton() {
+  clickedButton(event) {
     this.props.onSearchBarSubmit(this.state.searchTerm);
   }
 
@@ -17,11 +17,18 @@ class BrewerySearchBar extends Component {
 
   render() {
     return (
-      <div>
-        <input placeholder = 'Enter a brewer'
-               value={this.state.searchTerm}
-               onChange={event => this.onInputChange(event.target.value)} />
-        <button onClick={this.clickedButton.bind(this)}>Submit</button>
+      <div className='container'>
+        <div className='row'>
+          <section className='col-8'>
+            <div className='input-group'>
+              <input placeholder = 'Enter a brewer'
+                className='form-control'
+                value={this.state.searchTerm}
+                onChange={event => this.onInputChange(event.target.value)} />
+              <button onClick={this.clickedButton.bind(this)}>Submit</button>
+            </div>
+          </section>
+        </div>
       </div>
     );
   }

@@ -14,3 +14,26 @@
  * require_self
  */
 @import 'bootstrap';
+@import 'variables';
+
+body {
+  background-color: #fff;
+}
+
+.list-group-item {
+  background-color: $secondary-light;
+}
+
+.list-group-item:nth-child(even){
+  background-color: #fff;
+}
+
+.left-margin {
+  margin-left: 1em;
+}
+
+#search-results {
+  margin-top: 1em;
+  padding-left: 1em;
+  width: 67%;
+}

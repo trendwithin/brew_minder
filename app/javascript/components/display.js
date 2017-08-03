@@ -3,14 +3,20 @@ import React, { Component } from 'react';
 const Display = props => {
   const beerList = props.displayBeer.map(beer => {
     return (
-      <li key={beer}>{beer}</li>
+      <li className='list-group-item' key={beer}>{beer}</li>
     );
   });
 
   return (
-    <ul className="col-md-4 list-group">
-      {beerList}
-    </ul>
+    <div className='container'>
+      <div className='row'>
+        <div id='search-results'>
+          <ul className="col-md-12 list-group">
+            {beerList}
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 };
 
