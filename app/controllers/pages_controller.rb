@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def box
   end
+
+  def chucks
+  end
 end

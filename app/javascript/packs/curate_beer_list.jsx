@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import ConstantsList from './constants';
 import SearchBar from 'components/brewery_search_bar';
 import axios from 'axios';
-import { loadCheerioWith } from '../WA/Seattle/pinebox/pinebox_utility';
+import { loadCheerioWith } from '../utils/loadCheerio';
 import Display from 'components/display';
 
 class CurateBeerList extends Component {
   constructor(props) {
     super(props);
-    this.state = ({ bucket: [] });
-    this.selectedBreweryName = this.selectedBreweryName.bind(this);
+    this.state = ({ bucket: [['Find Beers']] });
+    this.selectedBrewersName = this.selectedBrewersName.bind(this);
   }
 
   selectedBreweryName(brewerName) {
@@ -21,10 +22,25 @@ class CurateBeerList extends Component {
     });
   }
 
+  selectedBrewersName(brewerName) {
+    let brewers = [];
+    ConstantsList.BREW_RLS.map(function (establishment) {
+      let localURL = Object.values(establishment);
+      axios.get(localURL).then(res => {
+        let k = _.keys(establishment);
+        let vals = loadCheerioWith(res, establishment, brewerName);
+        brewers.push([k, vals]);
+      });
+    }, this);
+
+    this.setState({ bucket: brewers });
+
+  }
+
   render() {
     return (
       <div>
-        <SearchBar onSearchBarSubmit={this.selectedBreweryName} />
+        <SearchBar onSearchBarSubmit={this.selectedBrewersName} />
         <Display displayBeer={this.state.bucket} />
       </div>
     );

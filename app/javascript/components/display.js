@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 const Display = props => {
+
   const beerList = props.displayBeer.map(beer => {
     return (
       <li className='list-group-item' key={beer}>{beer}</li>
