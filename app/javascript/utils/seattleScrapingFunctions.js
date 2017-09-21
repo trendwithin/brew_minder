@@ -7,7 +7,7 @@ export function scrapePineBox($, brewerName) {
   let draftList = draftListLeft.concat(draftListRight);
   let brewerList = cleanString(draftList);
   let foundMatches = findMatchingBeers(brewerList, brewerName);
-  return foundMatches
+  return foundMatches;
 };
 
 export function scrapeChucks($) {

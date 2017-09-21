@@ -9,7 +9,7 @@ import Display from 'components/display';
 class CurateBeerList extends Component {
   constructor(props) {
     super(props);
-    this.state = ({ bucket: [['Find Beers']] });
+    this.state = ({ bucket: [] });
     this.selectedBrewersName = this.selectedBrewersName.bind(this);
   }
 
@@ -29,12 +29,14 @@ class CurateBeerList extends Component {
       axios.get(localURL).then(res => {
         let k = _.keys(establishment);
         let vals = loadCheerioWith(res, establishment, brewerName);
-        brewers.push([k, vals]);
+        let key = k[0];
+        let obj = {};
+        obj.name = key;
+        obj.beers = vals;
+        brewers.push(obj);
+        this.setState({ bucket: brewers });
       });
     }, this);
-
-    this.setState({ bucket: brewers });
-
   }
 
   render() {
