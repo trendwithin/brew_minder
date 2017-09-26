@@ -21,7 +21,7 @@ class BrewerySearchBar extends Component {
         <div className='row'>
           <section className='col-8'>
             <div className='input-group'>
-              <input placeholder = 'Enter a brewer'
+              <input placeholder = 'Enter search term'
                 className='form-control'
                 value={this.state.searchTerm}
                 onChange={event => this.onInputChange(event.target.value)} />
