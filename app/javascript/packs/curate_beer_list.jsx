@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import ConstantsList from './constants';
+import ConstantsList from '../utils/constant_files/wa_constants';
 import SearchBar from 'components/brewery_search_bar';
 import axios from 'axios';
 import { loadCheerioWith } from '../utils/loadCheerio';
