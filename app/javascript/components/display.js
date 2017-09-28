@@ -4,16 +4,20 @@ import BeerList from './beer_list';
 const Display = props => {
   const beerList = props.displayBeer.map((beer) => {
     return(
-      <div>
-        <h1>{beer.name}</h1>
-        <ul className="col-md-12 list-group">
-        {beer.beers.map((beer) => {
-          return (
-            < BeerList beer={beer} />
-          );
-        })}
-        </ul>
-      </div>
+      <div className="row col-md-6 card card-block">
+        <h1 className="card-title">{beer.name}</h1>
+        <ul className="list-group card-text">
+          {beer.beers.map((beer) => {
+            return (
+              <  BeerList beer={beer} />
+            );
+          })}
+      </ul>
+        </div>
+
+
+
+
     );
   });
 
