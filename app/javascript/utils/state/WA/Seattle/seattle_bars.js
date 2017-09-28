@@ -1,4 +1,4 @@
-import { cleanString, findMatchingBeers } from './cleanse_data';
+import { cleanString, findMatchingBeers } from '../../../cleanse_data';
 import _ from 'lodash';
 
 export function scrapePineBox($, brewerName) {
