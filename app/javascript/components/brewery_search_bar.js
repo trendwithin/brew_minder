@@ -25,7 +25,8 @@ class BrewerySearchBar extends Component {
                 className='form-control'
                 value={this.state.searchTerm}
                 onChange={event => this.onInputChange(event.target.value)} />
-              <button onClick={this.clickedButton.bind(this)}>Submit</button>
+              <button onClick={this.clickedButton.bind(this)}
+                      className='btn btn-primary'>Submit</button>
             </div>
           </section>
         </div>

@@ -25,6 +25,7 @@ class CurateBeerList extends Component {
         obj.name = key;
         obj.beers = vals;
         brewers.push(obj);
+        console.log(brewers);
         this.setState({ beerListings: brewers });
       });
     }, this);
