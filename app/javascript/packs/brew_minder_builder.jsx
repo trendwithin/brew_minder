@@ -1,8 +1,18 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Grid from 'components/grid';
+import SearchBar from 'components/brewery_search_bar';
 
 class BrewMinderBuilder extends Component {
+  state = {
+    beerListings: [],
+  };
+
+  selectedBrewersName = (brewerName) => {
+    const brewers = [];
+    console.log(brewerName);
+  };
+
   chunkArray = (arr, sizeOfChunk) => {
     const chunkedArray = [];
     for (let i = 0; i < arr.length; i += sizeOfChunk) {
@@ -39,6 +49,9 @@ class BrewMinderBuilder extends Component {
     const formattedData = this.chunkArray(dummyData, 2);
     return (
       <div>
+        <SearchBar
+          onSearchBarSubmit={this.selectedBrewersName}
+        />
         <Grid
           data={formattedData}
         />
