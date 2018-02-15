@@ -6,7 +6,7 @@ class Grid extends Component {
       <div className='grid'>
         <GridContainer
           data={this.props.data}
-         />
+        />
       </div>
     );
   }
@@ -15,7 +15,7 @@ class Grid extends Component {
 class GridContainer extends Component {
   render() {
     return (
-      <div className='grid-container'>
+      <div className='container'>
         <GridRow
           data={this.props.data}
         />
@@ -29,64 +29,47 @@ class GridRow extends Component {
     const cols = [];
     this.props.data.map((element, index) => {
       cols.push(
-        <div
-          className='grid-content'
+        <GridCol
           key={index}
-        >
-          <GridCols
-            cols={element}
-          />
-        </div>
+          column={element}
+        />
       );
     });
     return (
-      <div className='container'>
+      <div className='row'>
         {cols}
       </div>
     );
   }
 }
 
-class GridCols extends Component {
+class GridCol extends Component {
   render() {
-    const header = '';
-    const col = [];
-    this.props.cols.map((element, index) => {
-      col.push(
-        <div
-          className='col-md-6'
-          key={index}
-        >
-          <BuildHeader
-          key={element.establishment}
-          locale={element.establishment}
-          />
-          <BuildList
-            beerList={element.beers}
-          />
-        </div>
-      );
-    });
     return (
-      <div className='row'>
-      {col}
+      <div className='col-md-6'>
+        <GridColumnHeader
+          header={this.props.column.establishment}
+        />
+        <GridList
+          list={this.props.column.beers}
+        />
       </div>
     );
   }
 }
 
-class BuildHeader extends Component {
+class GridColumnHeader extends Component {
   render() {
     return (
-      <h1>{this.props.locale}</h1>
+      <h1>{this.props.header}</h1>
     );
   }
 }
 
-class BuildList extends Component {
+class GridList extends Component {
   render() {
     const liElements = [];
-    this.props.beerList.map((element) => {
+    this.props.list.map((element) => {
       liElements.push(
         <li
         className='list-group-item'
@@ -103,4 +86,5 @@ class BuildList extends Component {
     );
   }
 }
+
 export default Grid;
