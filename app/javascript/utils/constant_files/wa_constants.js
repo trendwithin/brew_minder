@@ -1,6 +1,8 @@
 // test links locally
-const WA = [{ pinebox: 'box.html' }, { chucks85: 'chucks.html' },
+const WA = [{ pinebox: 'box.html' },
+            { chucks85: 'chucks.html' },
             { chucksCD: 'chuckscd.html' },
+            { brouwers: 'brouwers.html' },
            ];
 
 // live links

@@ -1,4 +1,4 @@
-import { scrapePineBox, scrapeChucks, convertDraftList } from './state/WA/Seattle/seattle_bars.js';
+import { scrapePineBox, scrapeChucks, convertDraftList, scrapeBrouwers } from './state/WA/Seattle/seattle_bars.js';
 import _ from 'lodash';
 
 const cheerio = require('cheerio');
@@ -16,6 +16,9 @@ export function loadCheerioWith(data, elem, brewerName) {
     case 'chucksCD':
       let chucksCD = scrapeChucks($);
       return convertDraftList(chucksCD, brewerName);
+    case 'brouwers':
+      let brouwers = scrapeBrouwers($);
+      return convertDraftList(brouwers, brewerName);
     default:
   }
 }

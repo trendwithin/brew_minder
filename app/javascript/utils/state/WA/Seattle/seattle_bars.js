@@ -17,7 +17,7 @@ export function scrapeChucks($) {
     brewerName.push(elem.children[0].data);
   });
 
-  $('td[class=draft_name]').map(function(i, elem) {
+  $('td[class=draft_name]').map(function (i, elem) {
     draftName.push(elem.children[0].data);
   });
 
@@ -25,11 +25,30 @@ export function scrapeChucks($) {
   return draftList;
 };
 
+export function scrapeBrouwers($) {
+  let brewerName = [];
+  let brewerDescription = [];
+  let draftList = [];
+
+  $('div[class=entry-content]').find('p').find('span[class=item]').map(function (i, elem) {
+    brewerName.push(elem.children[0].data);
+  });
+
+  $('div[class=entry-content]').find('p').find('span[class=description]').map(function (i, elem) {
+    brewerDescription.push(elem.children[0].data);
+  });
+
+  draftList = _.zip(brewerName, brewerDescription);
+  return draftList;
+}
+
 export function convertDraftList(arrayOfArrays, brewerName) {
   let testArray = new Array;
-  arrayOfArrays.map(function(elem, i) {
+
+  arrayOfArrays.map(function (elem, i) {
     testArray.push(elem.join(' '));
   });
+
   let merged = [].concat.apply([], testArray);
   let foundMatches = findMatchingBeers(merged, brewerName);
   return foundMatches;
