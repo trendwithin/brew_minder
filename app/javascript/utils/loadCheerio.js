@@ -1,4 +1,4 @@
-import { scrapePineBox, scrapeChucks, convertDraftList } from './state/WA/seattle/seattle_bars.js';
+import { scrapePineBox, scrapeChucks, convertDraftList } from './state/WA/Seattle/seattle_bars.js';
 import _ from 'lodash';
 
 const cheerio = require('cheerio');
