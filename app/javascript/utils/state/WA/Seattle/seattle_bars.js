@@ -42,6 +42,13 @@ export function scrapeBrouwers($) {
   return draftList;
 }
 
+export function scrapeBeerJunction($) {
+  // return to this feature
+  $('p[class=beer-name]').map(function (i, elem) {
+    console.log(elem);
+  });
+}
+
 export function convertDraftList(arrayOfArrays, brewerName) {
   let testArray = new Array;
 
