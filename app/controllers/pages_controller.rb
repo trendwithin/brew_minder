@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def chucks
   end
+
+  def chuckscd
+  end
 end

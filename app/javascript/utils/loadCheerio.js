@@ -13,6 +13,9 @@ export function loadCheerioWith(data, elem, brewerName) {
     case 'pinebox':
       return scrapePineBox($, brewerName);
       break;
+    case 'chucksCD':
+      let chucksCD = scrapeChucks($);
+      return convertDraftList(chucksCD, brewerName);
     default:
   }
 }
