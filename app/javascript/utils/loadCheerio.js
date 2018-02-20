@@ -20,7 +20,7 @@ export function loadCheerioWith(data, elem, brewerName) {
       let brouwers = scrapeBrouwers($);
       return convertDraftList(brouwers, brewerName);
 
-    // Issues Implementing this Feature
+    // Issues Implementing this Feature -- will note an issue in git repo
     // case 'beerJunction':
     //   let beerJunction = scrapeBeerJunction($);
     default:

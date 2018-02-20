@@ -1,4 +1,4 @@
-import { cleanString, findMatchingBeers } from '../../../cleanse_data';
+import { cleanString, findMatchingBeers, stripHTML } from '../../../cleanse_data';
 import _ from 'lodash';
 
 export function scrapePineBox($, brewerName) {
@@ -43,10 +43,37 @@ export function scrapeBrouwers($) {
 }
 
 export function scrapeBeerJunction($) {
+
+  const beerList = [];
+  const brewerName = [];
+
   // return to this feature
-  $('p[class=beer-name]').map(function (i, elem) {
-    console.log(elem);
+  $('div').find('p').find('a').map(function (i, elem) {
+    if (elem.children.length === 2) {
+      let beerName = elem.children[1].children[0].data;
+      let beerStyle = elem.children[1].children[1].children[0].data;
+      console.log(brewer);
+      console.log(secondBrew);
+      beerName = stripHTML(beerName);
+      beerStyle = stripHTML(beerStyle);
+      beerList.push([`${beerName} ${beerStyle}`]);
+    }
   });
+
+  // Currently an issue trying to get the name of the brewery to match with beer
+  // $('div').find('span').find('a').map(function (i, elem) {
+  //   if (elem.children.length === 1) {
+  //     if (elem.attribs.href !== undefined && elem.attribs.target !== undefined) {
+  //       let datapoint = elem.children[0].data;
+  //       datapoint = stripHTML(datapoint);
+  //       if (datapoint) {
+  //         if (datapoint.trim() !== 'Untappd') {
+  //           brewerName.push(datapoint);
+  //         }
+  //       }
+  //     }
+  //   }
+  // });
 }
 
 export function convertDraftList(arrayOfArrays, brewerName) {

@@ -19,3 +19,11 @@ export function findMatchingBeers(brewerList, brewerName) {
 
   return matchedBeers.length === 0 ? sorry :  matchedBeers;
 }
+
+export function stripHTML(taggedString) {
+  cleanString = taggedString;
+  cleanString = cleanString.replace(/<[^>]+>/g, '');
+  cleanString = cleanString.replace(/\s+/g, ' ').trim();
+  cleanString = cleanString.replace(/\\n/g, '');
+  return cleanString;
+}

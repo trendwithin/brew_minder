@@ -4,7 +4,8 @@ const WA = [{ pinebox: 'box.html' },
             { chucksCD: 'chuckscd.html' },
             { brouwers: 'brouwers.html' },
 
-            //{ beerJunction: 'https://business.untappd.com/locations/3026/themes/8580/js' },
+            // { beerJunction: 'https://www.thebeerjunction.com/tap-list-c2ws' },
+            // { beerJunction: 'https://business.untappd.com/locations/3026/themes/8580/js' },
             // currently an issue with BeerJuntion that needs to be addressed.
            ];
 
