@@ -17,6 +17,7 @@ class Chucks_85 < Scraper
     @draft_brewery = []
     @draft_name = []
     @beer_list = []
+    @formatted_beer_list = {}
   end
 
   def strip_draft_brewery
@@ -33,5 +34,9 @@ class Chucks_85 < Scraper
 
   def zip_beer_list
     @beer_list = @draft_brewery.zip(@draft_name)
+  end
+
+  def format_list beer_list
+    @formatted_beer_list = { chucks85: beer_list }
   end
 end

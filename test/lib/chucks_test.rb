@@ -1,7 +1,6 @@
 require 'test_helper'
 require './lib/scripts/scraper'
 
-
 class Chucks_85Test < Minitest::Test
    def setup
      VCR.use_cassette('chucks85') do
@@ -37,6 +36,15 @@ class Chucks_85Test < Minitest::Test
    end
 
    def test_zip_beer_list_format
-     
+     @chucks85.draft_brewery.push('testing')
+     @chucks85.draft_name.push('one, two, three')
+     zipped_array = @chucks85.zip_beer_list
+     assert_equal [['testing', 'one, two, three']], zipped_array
+   end
+
+   def test_formatted_beer_list
+     list = [['testing', 'one, two, three']]
+     expected = { chucks85: list }
+     assert_equal expected, @chucks85.format_list(list)        
    end
 end
