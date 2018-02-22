@@ -12,6 +12,7 @@ end
 # Site Specific Gems
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'mechanize', '~> 2.7', '>= 2.7.5'
 
 # Add tether for Bootstrap
 source 'https://rails-assets.org' do
@@ -54,6 +55,8 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'vcr', '~> 3.0', '>= 3.0.3'
+  gem 'webmock', '~> 3.3.0'
 end
 
 group :development do
@@ -63,6 +66,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'rb-readline', '~> 0.5.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

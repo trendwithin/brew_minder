@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/test'
+  root 'pages#test'
   get 'pages/box'
   get 'pages/chucks'
   get 'pages/chuckscd'
