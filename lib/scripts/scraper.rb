@@ -1,13 +1,14 @@
 require 'mechanize'
 
 class Scraper
+  attr_reader :page
+
   def initialize url = ''
     @page = Mechanize.new.get url
   end
 end
 
 class Chucks_85 < Scraper
-  attr_reader :page
   attr_accessor :draft_brewery, :draft_name, :beer_list
 
   def initialize url = 'http://localhost:3000/pages/chucks'
@@ -25,7 +26,7 @@ class Chucks_85 < Scraper
   end
 
   def strip_draft_name
-    @page.css('td[class=draft_brewery]').each do |elem|
+    @page.css('td[class=draft_name]').each do |elem|
       @draft_name.push(elem.text)
     end
   end
