@@ -1,0 +1,8 @@
+Beer Report HTML Email
+<h1><%= @chucks85.keys[0].to_s %></h1>
+
+<% @chucks85.values.each do |elem| %>
+  <% elem.each do |val| %>
+  <h5><%= "#{val}" %></h5>
+  <% end %>
+<% end %>
