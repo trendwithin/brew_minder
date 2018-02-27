@@ -13,6 +13,7 @@ end
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'mechanize', '~> 2.7', '>= 2.7.5'
+gem 'devise', '~> 4.4', '>= 4.4.1'
 
 # Add tether for Bootstrap
 source 'https://rails-assets.org' do
