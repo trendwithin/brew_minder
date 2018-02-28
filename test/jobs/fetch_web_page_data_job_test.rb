@@ -6,7 +6,7 @@ class FetchWebPageDataJobTest < ActiveJob::TestCase
 
   def setup
     VCR.use_cassette('chucks85_job_test') do
-      @email_beer_list = Seattle::SeattleScraper.chucks_85
+      @email_beer_list = Seattle::SeattleScraper.all
     end
   end
 

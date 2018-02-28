@@ -29,17 +29,17 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 28 Feb 2018 03:46:04 GMT
+      - Wed, 28 Feb 2018 04:45:47 GMT
       Server:
       - Apache
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Runtime:
-      - '0.197836'
+      - '0.164396'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       X-Request-Id:
-      - 60a78b80dd948bd1493b7a1a47981b9d
+      - 352c8217cba8c8f827bfd7f8683d6700
       X-Powered-By:
       - Phusion Passenger 4.0.10
       Etag:
@@ -116,7 +116,7 @@ http_interactions:
         Jd2BeaokW5GBZjQqMP/XAumfinHca/YzFK+SloAvkqbsxysO69nPuPwBWVX1
         Z95FAAA=
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 03:46:04 GMT
+  recorded_at: Wed, 28 Feb 2018 04:45:48 GMT
 - request:
     method: get
     uri: http://chucks-cd.jjshanks.net/draft
@@ -146,17 +146,17 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 28 Feb 2018 03:46:04 GMT
+      - Wed, 28 Feb 2018 04:45:48 GMT
       Server:
       - Apache
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Runtime:
-      - '0.284177'
+      - '0.278803'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       X-Request-Id:
-      - b88c5714d93da9c9c37ed6b08c9ab3a5
+      - 931092ec5adf19ed09ca975dc14c10ea
       X-Powered-By:
       - Phusion Passenger 4.0.10
       Etag:
@@ -233,5 +233,5 @@ http_interactions:
         Jd2BeaokW5GBZjQqMP/XAumfinHca/YzFK+SloAvkqbsxysO69nPuPwBWVX1
         Z95FAAA=
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 03:46:04 GMT
+  recorded_at: Wed, 28 Feb 2018 04:45:48 GMT
 recorded_with: VCR 3.0.3

@@ -4,6 +4,6 @@ class FetchWebPageDataJob < ApplicationJob
   queue_as :default
 
   def perform(*args)
-    Seattle::SeattleScraper.chucks_85
+    Seattle::SeattleScraper.all
   end
 end

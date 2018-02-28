@@ -40,3 +40,13 @@ class Chucks_85 < Scraper
     @formatted_beer_list = { chucks85: beer_list }
   end
 end
+
+class Chucks_CD < Chucks_85
+  def initialize url = 'http://localhost:3000/pages/chuckscd'
+    super
+  end
+
+  def format_list beer_list
+    @formatted_beer_list = { chucksCD: beer_list }
+  end
+end

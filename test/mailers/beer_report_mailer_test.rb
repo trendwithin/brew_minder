@@ -3,8 +3,8 @@ require 'test_helper'
 class BeerReportMailerTest < ActionMailer::TestCase
   def setup
     @user = users(:mackey)
-    VCR.use_cassette('chucks85_job_test') do
-      @email_beer_list = Seattle::SeattleScraper.chucks_85
+    VCR.use_cassette('beer_report_job_test') do
+      @email_beer_list = Seattle::SeattleScraper.all
     end
   end
 
@@ -21,5 +21,11 @@ class BeerReportMailerTest < ActionMailer::TestCase
     user_beer_list.each do |beer|
       assert_equal true, mail.body.encoded.include?(beer)
     end
+  end
+
+  test 'nightly beer report from multiple sources' do
+    mail = BeerReportMailer.beer_report(@user, @email_beer_list)
+    assert_equal true, mail.body.encoded.include?('chucks85')
+    assert_equal true, mail.body.encoded.include?('chucksCD')
   end
 end
