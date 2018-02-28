@@ -2,7 +2,8 @@
 class BeerReportMailerPreview < ActionMailer::Preview
   def beer_report_notifiction
     user = User.new(email: 'mailer_preview_user@example.org')
-    beer_list = { chucks85: ['check one', 'check two'] }
+    beer_list = { chucks85: ['check one', 'check two'],
+                  chucksCD: ['check three', 'check four'] }
     BeerReportMailer.beer_report(user, beer_list)
   end
 end
