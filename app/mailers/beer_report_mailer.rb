@@ -3,8 +3,8 @@ require "#{Rails.root}/lib/scripts/scrape_runner"
 class BeerReportMailer < ApplicationMailer
   default from: 'noreply@example.org'
 
-  def beer_report user
-    @chucks85 = {chucks85: ['beer one', 'beer two']}
+  def beer_report user, beer_list
+    @chucks85 = beer_list
 
     mail(
       to: user.email,

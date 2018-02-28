@@ -13,4 +13,12 @@ class FetchWebPageDataJobTest < ActiveJob::TestCase
   test "returned value is a hash" do
     assert_equal Hash, @chucks85.class
   end
+
+  test "beer report mailer" do
+    user = users(:mackey)
+    email = BeerReportMailer.beer_report user, @chucks85
+    assert_difference 'ActionMailer::Base.deliveries.size', +1 do
+      email.deliver_now
+    end
+  end
 end

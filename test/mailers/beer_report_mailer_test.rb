@@ -9,10 +9,17 @@ class BeerReportMailerTest < ActionMailer::TestCase
   end
 
   test 'valid user recieves email report' do
-    mail = BeerReportMailer.beer_report(@user)
+    mail = BeerReportMailer.beer_report(@user, @chucks85)
     assert_equal "Nightly Beer Report", mail.subject
     assert_equal [@user.email], mail.to
     assert_equal ['noreply@example.org'], mail.from
-    assert_equal true, mail.body.encoded.include?('<h1>chucks85</h1>')
+  end
+
+  test 'nightly beer report includes user beer list' do
+    mail = BeerReportMailer.beer_report(@user, @chucks85)
+    user_beer_list = @user.user_beer_list.pluck(:beer)
+    user_beer_list.each do |beer|
+      assert_equal true, mail.body.encoded.include?(beer)
+    end
   end
 end
