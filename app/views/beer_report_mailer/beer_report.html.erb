@@ -1,11 +1,13 @@
 <div class='container'>
   <div class="row">
     <h1><center>Nightly Beer Report</center></h1>
-    <h2><%= @email_beer_list.keys[0].to_s %></h2>
-    <% @email_beer_list.values.each do |elem| %>
-      <% elem.each do |val| %>
-      <h5><%= "#{val}" %></h5>
-      <% end %>
+    <% @email_beer_list.each do |k,v| %>
+      <h2><%= k %></h2>
+      <ul>
+        <% v.each do |li| %>
+          <li><%= li %></li>
+        <% end %>
+      </ul>
     <% end %>
   </div>
 </div>
