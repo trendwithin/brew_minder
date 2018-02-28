@@ -1,0 +1,237 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://chucks-cd.jjshanks.net/draft
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.5 Ruby/2.3.1p112 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - chucks-cd.jjshanks.net
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '300'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Feb 2018 04:45:47 GMT
+      Server:
+      - Apache
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.164396'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Request-Id:
+      - 352c8217cba8c8f827bfd7f8683d6700
+      X-Powered-By:
+      - Phusion Passenger 4.0.10
+      Etag:
+      - '"1c9a28cbd7b58300949a527d8d023d2f-gzip"'
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2390'
+      Keep-Alive:
+      - timeout=5, max=100
+      Connection:
+      - Keep-Alive
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        Z95FAAA=
+    http_version: 
+  recorded_at: Wed, 28 Feb 2018 04:45:48 GMT
+- request:
+    method: get
+    uri: http://chucks-cd.jjshanks.net/draft
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.7.5 Ruby/2.3.1p112 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - chucks-cd.jjshanks.net
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '300'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Feb 2018 04:45:48 GMT
+      Server:
+      - Apache
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.278803'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Request-Id:
+      - 931092ec5adf19ed09ca975dc14c10ea
+      X-Powered-By:
+      - Phusion Passenger 4.0.10
+      Etag:
+      - '"1c9a28cbd7b58300949a527d8d023d2f-gzip"'
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2390'
+      Keep-Alive:
+      - timeout=5, max=100
+      Connection:
+      - Keep-Alive
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        Z95FAAA=
+    http_version: 
+  recorded_at: Wed, 28 Feb 2018 04:45:48 GMT
+recorded_with: VCR 3.0.3

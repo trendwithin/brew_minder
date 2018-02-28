@@ -37,16 +37,16 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Etag:
-      - W/"dde5f664aba9cab5cb8b2831bb94754f"
+      - W/"07b8f1f87f3ca6e885f27dfb978bcb21"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _brew_minder_session=ak1kZk0zdVFqbnk5Q3pEYk10OWx1L0YrUVA4OFJKTlFyaDVRenVKMFp2MTZZZ3BDdmtnUU1FK0F6ZnJyYUhUMTV2dnNrRFBJUFhRbWZldHZOZUNtK2UzcEo5ZkVZa3dHajREUVk1N1BQWTNyZmp6TFVSL0hpcERleUJOY0hVOFp1MWQreGNQVllnRm0wVnJJQlIxYTJRPT0tLVp5Q3p2bmgxSnBUQlJqUURsejZJb1E9PQ%3D%3D--883518b3bf152cea24c50428b70817bce6f3bd44;
+      - _brew_minder_session=d3c4SDRKMDRPNG8rYXhFa2g0WElTUDR5RTlKMU9xZGZsL01PNUplaFZoVEF5OWcvMkwwUUlvbzA0QVN3NjVROWVqY2ljZWpZNTQzOE9BUURTNXhwNERVZWZKaEJtQU92M0hMS1RpM05MbHArU3VLZXpOTnRNcjlUc0R6WWxobHhUcGNYa29qR0FkUDZBV09jRVpMUWdRPT0tLUlCZ1BIMDU4R3BzUmxuZlNXVmtERHc9PQ%3D%3D--4f8b1ec99939bab7b08ed83df9c81207a9579ae5;
         path=/; HttpOnly
       X-Request-Id:
-      - 1f566db1-302d-45a6-bfed-c92894f1a512
+      - 15945fdd-1449-4f02-9aff-aa468b905d8a
       X-Runtime:
-      - '0.136449'
+      - '0.080734'
       Transfer-Encoding:
       - chunked
     body:
@@ -55,9 +55,9 @@ http_interactions:
         PCFET0NUWVBFIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPHRpdGxlPkJy
         ZXdNaW5kZXI8L3RpdGxlPgogICAgPG1ldGEgbmFtZT0iY3NyZi1wYXJhbSIg
         Y29udGVudD0iYXV0aGVudGljaXR5X3Rva2VuIiAvPgo8bWV0YSBuYW1lPSJj
-        c3JmLXRva2VuIiBjb250ZW50PSJKWUVpR3pNY0NIVzQ3SlpFbDdUL2VhQkEz
-        d3A4NlN3ZFRnNDRqZWNKZWRBbisrenZqdWQ5aytiQkNiRkhGaFN2Y2VCd0la
-        NVBpZ2NqOFltZmNRWG1Pdz09IiAvPgoKICAgIDxsaW5rIHJlbD0ic3R5bGVz
+        c3JmLXRva2VuIiBjb250ZW50PSJDaEhRMFpHSWZpWjdSbWdkalpKMGUzR2FY
+        RDlhNXBCZHdEdm9uU1JraDhsTnlJUWZFVC91c25mWjFqU0IxMGU0NHZUZU1K
+        WnhDdVB6b0JEcTFweUx3Zz09IiAvPgoKICAgIDxsaW5rIHJlbD0ic3R5bGVz
         aGVldCIgbWVkaWE9ImFsbCIgaHJlZj0iL2Fzc2V0cy9hcHBsaWNhdGlvbi5z
         ZWxmLTBlMWUyMjIzNzAzMTcxODJkY2RiODZhNGU0OGYyNTVlMmI2NTg4YTBh
         NGY2YjdkNWUzMjFjMmNjMDgwZDY5MmEuY3NzP2JvZHk9MSIgZGF0YS10dXJi
@@ -529,7 +529,7 @@ http_interactions:
         cz0iZHJhZnRfYWJ2Ij41LjM8L3RkPgogICAgPC90cj4KPC90YWJsZT4KCiAg
         PC9kaXY+CjwvYm9keT4KPC9odG1sPgoKICA8L2JvZHk+CjwvaHRtbD4K
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 04:45:49 GMT
+  recorded_at: Wed, 28 Feb 2018 04:45:51 GMT
 - request:
     method: get
     uri: http://localhost:3000/pages/chucks
@@ -567,16 +567,16 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Etag:
-      - W/"1f0fbbb56f3f3b642c81af253331c90f"
+      - W/"bb2bcfb6fa25c6e5701a9cd89aad3de5"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _brew_minder_session=aTBBZlFNdzNxU3dqZW0wc2hLU3U1NmZWYk1pRm5vUTRFWDRYMzdCZ3MyWjAvYlppQVM2ZFI4cE9pZ2ttVml4OXk1cVBhc1hGdEx3N0RVSG81WHVyTkllN1ByemRWSHRWWkYzZkFIQlc5ZEZYdlYwR0hxNU1kV3VFYU03eURlTExrbVRBcjNFUTB3T0hOc0ZzdUd3OUNBPT0tLTdDZFRYUE1pZkNxOUorRjNIZHRROFE9PQ%3D%3D--df4d5d918960423e4c20ca81cee0d07d5c9f2d3e;
+      - _brew_minder_session=UUJMNjV0cTFYWjcxL05DdmlVSVJMd2w2VU9Pb3FLZFFuVE9UWmhPZlo0YzFVVWJrS3NxbG96Z1g3Vk81ekZuSS9BQlVQdll4VUc3Rk1RK1VmMlUrcFdEZlZlQVM1NXlWN0ovYnlpeWtBMVpmUHNNcnFCZkNaRkxpbWtQZHZxa3M4M3NKeWpienhBL0NUU2tRM0JzZVVRPT0tLVNBT0N2OGpNMzY3SGZUNHdkaGIraEE9PQ%3D%3D--54809a43c3f2509fbe595b0faad115a4c36d8b07;
         path=/; HttpOnly
       X-Request-Id:
-      - 48c57884-af1a-4efe-bf4a-8e2b0fee57d3
+      - 812d5024-ca75-4e4f-a5cd-3cc99867e470
       X-Runtime:
-      - '0.091182'
+      - '0.085530'
       Transfer-Encoding:
       - chunked
     body:
@@ -585,9 +585,9 @@ http_interactions:
         PCFET0NUWVBFIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPHRpdGxlPkJy
         ZXdNaW5kZXI8L3RpdGxlPgogICAgPG1ldGEgbmFtZT0iY3NyZi1wYXJhbSIg
         Y29udGVudD0iYXV0aGVudGljaXR5X3Rva2VuIiAvPgo8bWV0YSBuYW1lPSJj
-        c3JmLXRva2VuIiBjb250ZW50PSJLdENJSTRrMnVFYUQ3dVpNR3IxWW1meE9x
-        KzhGdEs3bk1ZZ2ovTk4xOXdwVGhQNHBYN0l3ZXprL2tncG4rVCszR0RrZDVL
-        TVVPTDlrNEdsMlNqMmpRdz09IiAvPgoKICAgIDxsaW5rIHJlbD0ic3R5bGVz
+        c3JmLXRva2VuIiBjb250ZW50PSI5dW9uekV0dTdScFNhRG40QzV6RFFpQ2Rj
+        QlFxTit6VXNQdUFuSTNSam5wdFdlOXVlc3FMTCtZNGEyNEVmVlVmd1pPMjFo
+        bkxuUDZoTUFlOVk0cWVYZz09IiAvPgoKICAgIDxsaW5rIHJlbD0ic3R5bGVz
         aGVldCIgbWVkaWE9ImFsbCIgaHJlZj0iL2Fzc2V0cy9hcHBsaWNhdGlvbi5z
         ZWxmLTBlMWUyMjIzNzAzMTcxODJkY2RiODZhNGU0OGYyNTVlMmI2NTg4YTBh
         NGY2YjdkNWUzMjFjMmNjMDgwZDY5MmEuY3NzP2JvZHk9MSIgZGF0YS10dXJi
@@ -1059,7 +1059,7 @@ http_interactions:
         cz0iZHJhZnRfYWJ2Ij41LjM8L3RkPgogICAgPC90cj4KPC90YWJsZT4KCiAg
         PC9kaXY+CjwvYm9keT4KPC9odG1sPgoKICA8L2JvZHk+CjwvaHRtbD4K
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 04:45:49 GMT
+  recorded_at: Wed, 28 Feb 2018 04:45:51 GMT
 - request:
     method: get
     uri: http://localhost:3000/pages/chuckscd
@@ -1097,23 +1097,23 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Etag:
-      - W/"e0124e4a9a6e55db1c8937fa075d01c8"
+      - W/"0a514f3983437948c0efd285cc5715ee"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _brew_minder_session=NVl0cXdsRlBZR1hJeE1mYXEvL2lvS084K0NpU2lEWjJtSlg1d0NxcEd2ZzB2OEtqeXBUd0xGVjNOa1N1R3FONjIwakF3NDJWSkc3Tm9MclVwaW9ZUE5yS1J1T3I5UWdNN0FnelFJZG9lckV0cTl4WlJUa1BBUTN5czdlTkg0em5YaXRpZFVJRzkvamxjc08rRmpnTExRPT0tLVRXc2tQeTBvSzgyK25LOXJOc2ZqUVE9PQ%3D%3D--25545f53dbcf21e12a7607684b900eed06cf571c;
+      - _brew_minder_session=dHcrZGpJZ3hiYy9PSXZITkh2MFBMVGNaVWpVeUROVG9ueWJQcU53bHhiTWtCdEdaMWVRUnpXSDR5cGFldXJSMEI3bHo4N3F2NVpUQTFmeFNKQVFOTzNuWkpwbjhOODBpMTNDdGVXZzZucW50TU84Mmt5U3hjZ3RBZTc5cGNPMkttdittZ0lyZjhvMXJJNGNFVStKdVRnPT0tLTRCS1E1MmtkTm5YSVdjUTM2UTg5QUE9PQ%3D%3D--6291c403f6835d69cfbed22530d6ecf06e927cb3;
         path=/; HttpOnly
       X-Request-Id:
-      - 35fe8169-06cd-4268-968f-e182262cf228
+      - b46d477b-bb33-43cd-b7d1-1155b8062c4a
       X-Runtime:
-      - '0.084436'
+      - '0.097487'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html>\n  <head>\n    <title>BrewMinder</title>\n
         \   <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\"
-        content=\"NTZZzv2w9WpWRBf2bvygsoe6YQ0YRlbsdN7CKCNHXPWc/GOpu3cbvzDk76yF0tr85LR9BqGZwzgNexnS868KbQ==\"
+        content=\"HVp0VQpWXvyCjRpN9ZEvDWsKkpZyyx8kEBaGbyZm4eJMObDekI2Yk6FVBuaX/MqJtR3gIXC6g/0r2mO1zpUj2g==\"
         />\n\n    <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application.self-0e1e222370317182dcdb86a4e48f255e2b6588a0a4f6b7d5e321c2cc080d692a.css?body=1\"
         data-turbolinks-track=\"reload\" />\n    <script src=\"/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1\"
         data-turbolinks-track=\"reload\"></script>\n<script src=\"/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1\"
@@ -1359,7 +1359,7 @@ http_interactions:
         \     <td class=\"draft_abv\">7.3</td>\n    </tr>\n</table>\n\n  </div>\n</body>\n</html>\n\n
         \ </body>\n</html>\n"
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 04:45:49 GMT
+  recorded_at: Wed, 28 Feb 2018 04:45:51 GMT
 - request:
     method: get
     uri: http://localhost:3000/pages/chuckscd
@@ -1397,23 +1397,23 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Etag:
-      - W/"3cd614e35f1c5163dfd51515c71a60b4"
+      - W/"318bad36ad36e6e4fe1f0ffb0b82bce2"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _brew_minder_session=MjlJZml5dlhnRXhvM1padVB6Y2NtWGFMK3dTc25hY1VNQ2xQbzdoMzdkc0JvZTY5SGlkcmZsU2JmNHdHbnR6ZWd5WHRTallpL2xVenN0MGNHaHlTTmFPRG5YWm1FSGNzT2RBd0FJdlBqV0tBUnkwNG0vUjI1eDBhR1l3QnpmZVFVdWNXSVdXVmdsWXlRRmpIWGJKalFnPT0tLVgrNGFtMzY5ZUw0OEk3SkU5YnBZeGc9PQ%3D%3D--1d72ef668379eda934a99b06b68f8d0b44f6112f;
+      - _brew_minder_session=NFU4OWx3eFBZWTJsUFRRVC9iVXJjMWt5b3VKSWVzSTV6dHd0V3puMFhRdmJSN202SDVWQ3F1aThUYUZIZDd0Szg5cnNMQjgvUzV2aVVpTFJPREMzN1N1RXhYc0J0YjJuRGtFazRhYk5PdDN3ci9xaHh1OU5RaHc0TGFvSjBUb1NEVUc4cExxTW5GNXpEc2lMOXBTTkZnPT0tLS96dWpjeFdRUzNVRTBGNHArTVJwTGc9PQ%3D%3D--3abaa3bbbc0e88b28b0b121ec939e91f4cc1f032;
         path=/; HttpOnly
       X-Request-Id:
-      - 4fea633d-a4c1-4bba-a74e-3f5ad3fc9e63
+      - f943b6d8-7dff-4fc4-82a0-64b9a0b04731
       X-Runtime:
-      - '0.078700'
+      - '0.086506'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html>\n  <head>\n    <title>BrewMinder</title>\n
         \   <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\"
-        content=\"L4cNbR8dEIIMtz57/I4ITuIT1BW30rWavDZ0rEk/tT9IN5BrDWTBP87D49h9wvRlyoui+c8ZxWHjC8aVkfmKew==\"
+        content=\"9W12PBCwdYg8cHSJPyo2iECXp5AOM9dx8/GXnS+0D0UT9rPAofLV8ifm1IFp6fh/GkyKeAGRNVzii1vZPJEbrw==\"
         />\n\n    <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application.self-0e1e222370317182dcdb86a4e48f255e2b6588a0a4f6b7d5e321c2cc080d692a.css?body=1\"
         data-turbolinks-track=\"reload\" />\n    <script src=\"/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1\"
         data-turbolinks-track=\"reload\"></script>\n<script src=\"/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1\"
@@ -1659,5 +1659,5 @@ http_interactions:
         \     <td class=\"draft_abv\">7.3</td>\n    </tr>\n</table>\n\n  </div>\n</body>\n</html>\n\n
         \ </body>\n</html>\n"
     http_version: 
-  recorded_at: Wed, 28 Feb 2018 04:45:49 GMT
+  recorded_at: Wed, 28 Feb 2018 04:45:51 GMT
 recorded_with: VCR 3.0.3

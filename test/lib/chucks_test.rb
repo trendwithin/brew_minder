@@ -15,24 +15,24 @@ class Chucks_85Test < Minitest::Test
 
    def test_mechanize_page_for_valid_css_tag_brewery_name
      count = @chucks85.page.css('td[class=draft_brewery]').size
-     assert_equal 49, count
+     assert_equal 50, count
    end
 
    def test_mechanize_page_for_valid_css_tag_draft_name
      count = @chucks85.page.css('td[class=draft_name]').size
-     assert_equal 49, count
+     assert_equal 50, count
    end
 
    def test_strip_draft_name_returns_proper_format
      @chucks85.strip_draft_brewery
      assert_equal Array, @chucks85.draft_brewery.class
-     assert_equal 49, @chucks85.draft_brewery.size
+     assert_equal 50, @chucks85.draft_brewery.size
    end
 
    def test_strip_draft_name_returns_proper_format
      @chucks85.strip_draft_name
      assert_equal Array, @chucks85.draft_brewery.class
-     assert_equal 49, @chucks85.draft_name.size
+     assert_equal 50, @chucks85.draft_name.size
    end
 
    def test_zip_beer_list_format
@@ -45,6 +45,6 @@ class Chucks_85Test < Minitest::Test
    def test_formatted_beer_list
      list = [['testing', 'one, two, three']]
      expected = { chucks85: list }
-     assert_equal expected, @chucks85.format_list(list)        
+     assert_equal expected, @chucks85.format_list(list)
    end
 end
