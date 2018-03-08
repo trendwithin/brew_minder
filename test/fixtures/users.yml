@@ -7,3 +7,8 @@
 mackey:
   email: vic@theshield.net
   encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+lem:
+  email: lem@theshield.net
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+  

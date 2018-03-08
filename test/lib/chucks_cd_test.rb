@@ -39,7 +39,7 @@ class Chucks_CDTest < Minitest::Test
      @chucksCD.draft_brewery.push('testing')
      @chucksCD.draft_name.push('one, two, three')
      zipped_array = @chucksCD.zip_beer_list
-     assert_equal [['testing', 'one, two, three']], zipped_array
+     assert_equal ['testing one, two, three'], zipped_array
    end
 
    def test_formatted_beer_list
