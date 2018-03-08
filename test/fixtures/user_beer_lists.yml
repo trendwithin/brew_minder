@@ -7,3 +7,11 @@ firestone:
 stout:
   beer: Stout
   user: mackey
+
+zima:
+  beer: Zima
+  user: lem
+
+cider:
+  beer: Cider
+  user: lem

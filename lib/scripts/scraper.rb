@@ -33,7 +33,12 @@ class Chucks_85 < Scraper
   end
 
   def zip_beer_list
-    @beer_list = @draft_brewery.zip(@draft_name)
+    zipped_list =  @draft_brewery.zip(@draft_name)
+    zipped_list.each do |elem|
+      @beer_list.push(elem.join(' '))
+    end
+    @beer_list
+    # @beer_list = @draft_brewery.zip(@draft_name)
   end
 
   def format_list beer_list
